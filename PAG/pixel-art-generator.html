@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>　PixelArtGenerator </title>
+      <script type="text/javascript" language="javascript" src="main.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112669537-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112669537-1');
+      </script>
+
+    </head>
+
+    <body>
+        <h2>ドット絵メーカー</h2>
+        <h3>描画欄</h3>
+        <div>
+            <table id="TBL"></table>
+        </div>
+        <br>
+
+      <h3>カラーインデックス</h3>
+        <div>
+            <table id="ColorTBL">
+                <tr>
+                    <td style="background:#000000"></td>
+                    <td style="background:#0000ff"></td>
+                    <td style="background:#00ff00"></td>
+                    <td style="background:#00ffff"></td>
+                    <td style="background:#ff0000"></td>
+                    <td style="background:#ff00ff"></td>
+                    <td style="background:#ffff00"></td>
+                    <td style="background:#ffffff"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <input type="button" id="button" value="消去">
+        <input type="button" id="button2" value="画像生成">
+        <br>
+
+        <h3>生成画像表示</h3>
+        <canvas id="canvas" width="640" height="480"></canvas>
+
+    </body>
+</html>
